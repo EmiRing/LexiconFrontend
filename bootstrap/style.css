@@ -1,0 +1,75 @@
+header {
+    grid-area: header;
+}
+
+.navbar-brand img{
+    width: 177px;
+    height: 40px;
+    object-fit: cover;
+}
+/* a {
+    color: white;
+    text-decoration: none;
+} */
+
+/* a:hover {
+  color: #157ab5;
+  text-decoration: none;
+} */
+
+.carousel-inner img{
+    margin: auto;
+    height: 300px;
+    
+}
+
+.carousel {
+    grid-area: carousel;
+    padding-top: 70px;
+}
+
+main {
+    grid-area: main;
+
+
+}
+
+aside {
+    min-width: 200px;
+}
+
+article {
+    width: auto;
+}
+
+form {
+    grid-area: form;
+    width: auto;
+    min-width: 500px;
+    margin: auto;
+    
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+#grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'carousel carousel carousel'
+    'main main main'
+    'main main main'
+    'form form form'
+    'footer footer footer' ;
+    min-width: 500px;
+    max-width: 1024px;
+    margin: 0px auto;
+}
