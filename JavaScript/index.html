@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- Rotate text -->
+    <div class="container">
+      <h1 id="textRotator">Lexicon</h1>
+
+      <button class="rotateBtn" onclick="rotatingLexicon(500)">
+        Start animation
+      </button>
+
+      <button class="rotateBtn" onclick="myStopFunction()">Stop</button>
+
+      <button class="rotateBtn" onclick="resetText()">Reset</button>
+    </div>
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- Guess number -->
+    <div class="container">
+      <div class="wrapper">
+        <h2>Guess a random number between 1 and 10</h2>
+        <div class="row">
+        <div class="col-50" id="hide" hidden>
+          <label for="guess">Make a guess:</label>
+          <input type="number" id="guess" name="guess" min="1" max="10" />
+        </div>
+
+        <button class="submit col-50" id="guessBtn" onclick="guessingNumber() ">
+          Randomize
+        </button>
+        </div>
+      </div>
+      <br />
+      <div class="result" id="guessResult"></div>
+    </div>
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- Days to christmas -->
+    <div class="container" id="daysToChristmas"></div>
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- add py to the word -->
+    <div class="container" id="pyWords" onmouseover="mouseOverPy()">
+      <h2>Add py to the word</h2>
+      <label id="pyLabel" for="pyWord">Please write a word:</label>
+      <input type="text" id="pyWord" name="pyWord" autofocus />
+
+      <button class="submit" onclick="addPyToWord()">Submit!</button><br />
+      <div class="result" id="pyResult"></div>
+    </div>
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- close to 100 -->
+    <div class="container">
+      <h2>Which number is closest to 100?</h2>
+      <div class="closeTo100-grid">
+        <div class="row">
+          <div class="col-50">
+            <label for="value1">First number:</label>
+          </div>
+          <div class="col-50">
+            <input type="number" id="value1" name="value1" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-50">
+            <label for="value2">Second number:</label>
+          </div>
+          <div class="col-50">
+            <input type="number" id="value2" name="value2" />
+          </div>
+        </div>
+
+        <div>
+          <button class="submit" onclick="closeTo100()">Check!</button><br />
+        </div>
+        <div class="result" id="closeTo100result"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

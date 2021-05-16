@@ -1,0 +1,98 @@
+body {
+    justify-content: center;
+    align-content: center;
+}
+h2 {
+    padding: 0px;
+    margin-top: 0px;
+}
+button {
+    border-radius: 15px;
+    /* padding: 5px; */
+    background-color: blanchedalmond;
+    font-size: 30px;
+    
+}
+input {
+    font-size: 30px;
+    width: 5em;
+}
+.result {
+    font-size: 60px;
+}
+.wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    max-width: 1024px;
+    padding: 30px;
+    margin:  20px auto;
+    background-color: cadetblue;
+    font-size: 30px;
+}
+.closeTo100-grid{
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+#guessBtn {
+    width: 200px;
+    float: unset;
+}
+
+#textRotator {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 45px;
+    padding: 0px;
+    margin-top: 0%;
+}
+
+.rotateBtn {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#guess {
+    width: 2em;
+}
+
+#pyWord {
+    
+    width: 5em;
+}
+
+
+#pyResult {
+    font-size: 60px;
+    margin-left: 30px;
+}
+#value1, #value2{
+    width: 75%;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, .col-50, input {
+    width: 100%;
+    margin-top: 0;
+  }
+  #guessBtn {
+      float: unset !important; 
+  }
+}
